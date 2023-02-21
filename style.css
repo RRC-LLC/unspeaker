@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Sprat";
+    src: url("fonts/sprat.woff2")
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: Sprat;
+    font-size: 40px;
+    line-height: 1.25;
+    font-variation-settings: "wght" 100, "wdth" 10;
+
+    background-color: #222222;
+    color: #ffffff;
+
+    display: flex;
+}
+
+
+canvas {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vmax;
+    height: 100vmax;
+    pointer-events: none;
+    z-index: -1;
+}
